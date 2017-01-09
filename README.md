@@ -9,7 +9,7 @@ Note: `process.uptime()` reports a value in seconds, while `Date.now()` reports 
 ## Usage
 
 ```javascript
-uptimeStart = require("uptime-start")
+var uptimeStart = require("uptime-start")
 console.log(Date.now() - uptimeStart)
 ```
 
