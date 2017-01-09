@@ -1,10 +1,19 @@
 # uptime-start [![Build Status](https://travis-ci.org/braveg1rl/uptime-start.png?branch=master)](https://travis-ci.org/braveg1rl/uptime-start) [![Dependency Status](https://david-dm.org/braveg1rl/uptime-start.png)](https://david-dm.org/braveg1rl/uptime-start)
 
-Node's counterpart for performance.timing.navigationStart
+The approximate value of `Date.now()` at the time the Node.js process was started.
+
+The value is computed as follows: `Date.now() - (process.uptime() * 1000)`
+
+Note: `process.uptime()` reports a value in seconds, while `Date.now()` reports a value in milliseconds.
 
 ## Usage
 
+```javascript
+uptimeStart = require("uptime-start")
+console.log(Date.now() - uptimeStart)
+```
 
+This gives the current uptime in milliseconds. This value is equivalent to `process.uptime()*1000)`
 
 ## License
 

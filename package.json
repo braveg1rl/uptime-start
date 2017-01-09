@@ -2,14 +2,16 @@
   "name": "uptime-start",
   "version": "0.1.0",
   "author": "Braveg1rl <braveg1rl@outlook.com>",
-  "description": "Node's counterpart for performance.timing.navigationStart",
+  "description": "The approximate value of Date.now() at the time the Node.js process was started.",
   "keywords": [],
   "license": "MIT",
   "private": false,
   "dependencies": {},
   "devDependencies": {
+    "chai": "^3.5.0",
     "coffee-script": "^1.12.2",
     "mocha": "^3.2.x",
+    "performance-now": "^2.0.0",
     "pre-commit": "^1.2.2"
   },
   "optionalDependencies": {},
