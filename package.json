@@ -19,7 +19,6 @@
   "main": "lib/uptime-start.js",
   "scripts": {
     "build": "mkdir -p lib && rm -rf lib/* && node_modules/.bin/coffee --compile -m --output lib/ src/",
-    "jumpstart": "mkdir -p src && touch src/uptime-start.coffee && mkdir -p test && touch test/uptime-start.coffee && npm install",
     "prepublish": "npm test",
     "pretest": "npm run build",
     "reinstall": "rm -rf node_modules/ && npm install",
