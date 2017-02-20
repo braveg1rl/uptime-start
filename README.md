@@ -1,5 +1,7 @@
 # uptime-start [![Build Status](https://travis-ci.org/braveg1rl/uptime-start.png?branch=master)](https://travis-ci.org/braveg1rl/uptime-start) [![Dependency Status](https://david-dm.org/braveg1rl/uptime-start.png)](https://david-dm.org/braveg1rl/uptime-start)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/braveg1rl/uptime-start.svg)](https://greenkeeper.io/)
+
 The approximate value of `Date.now()` at the time the Node.js process was started.
 
 The value is computed as follows: `Date.now() - (process.uptime() * 1000)`
